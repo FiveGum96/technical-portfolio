@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technisches Portfolio mit Projekten zu Test Engineering, Verification & Validation, Datenanalyse und Automatisierung.">
+  <title>Technisches Portfolio | Test Engineering & Automatisierung</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#start" aria-label="Technisches Portfolio – Startseite">
+        <span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span>
+        <span>TECH<span class="brand-accent">PORTFOLIO</span></span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="#projekte">Projekte</a>
+        <a href="#ausblick">Ausblick</a>
+        <a href="#technologien">Technologien</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="hauptinhalt">
+    <section class="hero" id="start">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"><span class="status-dot"></span> Technisches Projektportfolio</span>
+          <h1>Technische Probleme <span class="highlight">strukturiert lösen.</span></h1>
+          <p class="hero-lead">Projekte rund um <strong>Test Engineering</strong>, <strong>Verification &amp; Validation</strong>, <strong>Datenanalyse</strong> und <strong>Automatisierung</strong> – mit nachvollziehbaren Anforderungen, Code und Ergebnissen.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projekte">Projekt ansehen <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://github.com/FiveGum96/automated-test-validation-framework" target="_blank" rel="noopener noreferrer">GitHub-Repository <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="scope-note">Hinweis: Das bisher abgeschlossene Referenzprojekt verwendet ausschließlich simulierte Messdaten. Es umfasst keinen realen Prüfstand.</p>
+        </div>
+        <div class="visual-card" aria-label="Schematische Darstellung des Test-Workflows">
+          <div class="visual-heading"><span class="visual-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>TEST WORKFLOW</span><span class="visual-tag">SIMULATION</span></div>
+          <div class="visual-steps">
+            <div><span class="step-number">01</span><span>Messdaten simulieren</span><span class="step-mark">✓</span></div>
+            <div><span class="step-number">02</span><span>Grenzwerte prüfen</span><span class="step-mark">✓</span></div>
+            <div><span class="step-number">03</span><span>PASS / FAIL bewerten</span><span class="step-mark">✓</span></div>
+            <div><span class="step-number">04</span><span>Berichte erstellen</span><span class="step-mark">✓</span></div>
+          </div>
+          <div class="visual-footer"><span class="mini-indicator"></span> Reproduzierbarer Testablauf <span>PYTHON</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projekte">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-kicker">01 / REFERENZPROJEKT</p><h2>Abgeschlossenes Projekt</h2></div><span class="section-count">01 Projekt</span></div>
+        <article class="project-card">
+          <div class="project-info">
+            <span class="pill pill-complete"><span class="status-dot"></span> Abgeschlossen</span>
+            <h3>Automated Test Validation Framework</h3>
+            <p>Python-basiertes Framework zur automatisierten Auswertung <strong>simulierter</strong> Spannungs-, Strom- und Temperaturmessdaten. Das Projekt verbindet technische Anforderungen, Testfälle, Grenzwertprüfungen und reproduzierbare Berichte.</p>
+            <ul class="check-list">
+              <li>Requirements und Testplan</li>
+              <li>Automatische PASS/FAIL-Bewertung und Fehlerzeiträume</li>
+              <li>Diagramme sowie PDF- und Excel-Testreports</li>
+              <li>11 pytest-Tests und GitHub-Actions-Workflow</li>
+            </ul>
+            <div class="tags" aria-label="Technologien dieses Projekts"><span>Python</span><span>pandas</span><span>NumPy</span><span>matplotlib</span><span>pytest</span><span>GitHub Actions</span></div>
+            <a class="project-link" href="https://github.com/FiveGum96/automated-test-validation-framework" target="_blank" rel="noopener noreferrer">Code und Dokumentation auf GitHub ansehen <span aria-hidden="true">↗</span></a>
+          </div>
+          <aside class="result-panel" aria-label="Beispielergebnisse aus dem simulierten Testlauf TR-001">
+            <span class="result-label">BEISPIEL-TESTLAUF · TR-001</span>
+            <div class="metric"><span>Voltage Range Test</span><strong class="fail">FAIL</strong></div>
+            <div class="metric"><span>Current Limit Test</span><strong class="fail">FAIL</strong></div>
+            <div class="metric"><span>Temperature Limit Test</span><strong class="fail">FAIL</strong></div>
+            <div class="result-explanation"><span class="result-bullet">!</span><span>Die Grenzwertverletzungen wurden absichtlich in die simulierten Messdaten eingebaut, um ihre Erkennung zu demonstrieren.</span></div>
+          </aside>
+        </article>
+
+        <!-- Echte Diagramme aus dem vorhandenen Beispiel-Testlauf TR-001 -->
+        <div class="evidence-section" id="testergebnisse">
+          <div class="evidence-heading">
+            <div>
+              <p class="section-kicker">AUSGEWÄHLTE ERGEBNISSE · TR-001</p>
+              <h3>Messdaten, Grenzwerte und Testberichte</h3>
+              <p class="section-intro">Die folgenden Diagramme wurden mit dem vorhandenen Python-Skript aus <strong>500 simulierten Messwerten</strong> des Beispiel-Testlaufs erstellt. Die drei FAIL-Ergebnisse zeigen absichtlich eingebaute Grenzwertverletzungen – keine Fehler an realer Hardware.</p>
+            </div>
+          </div>
+          <div class="plot-grid">
+            <figure class="plot-card">
+              <a href="assets/plots/voltage_plot.png" target="_blank" rel="noopener noreferrer" aria-label="Spannungsdiagramm in voller Größe öffnen">
+                <img src="assets/plots/voltage_plot.png" alt="Spannung über der Zeit mit Unter- und Obergrenze; Überschreitung von 15,0 bis 15,9 Sekunden" loading="lazy" width="1000" height="500">
+              </a>
+              <figcaption><strong>Spannung · 12,80 V Maximum</strong><span>Grenzwert: 11,50–12,50 V · FAIL bei 15,0–15,9 s</span></figcaption>
+            </figure>
+            <figure class="plot-card">
+              <a href="assets/plots/current_plot.png" target="_blank" rel="noopener noreferrer" aria-label="Stromdiagramm in voller Größe öffnen">
+                <img src="assets/plots/current_plot.png" alt="Strom über der Zeit; Überschreitung der Grenze von 0,50 Ampere zwischen 28,0 und 28,9 Sekunden" loading="lazy" width="1000" height="500">
+              </a>
+              <figcaption><strong>Strom · 0,65 A Maximum</strong><span>Grenzwert: höchstens 0,50 A · FAIL bei 28,0–28,9 s</span></figcaption>
+            </figure>
+            <figure class="plot-card">
+              <a href="assets/plots/temperature_plot.png" target="_blank" rel="noopener noreferrer" aria-label="Temperaturdiagramm in voller Größe öffnen">
+                <img src="assets/plots/temperature_plot.png" alt="Temperatur über der Zeit; Überschreitung von 50 Grad Celsius zwischen 40,0 und 41,9 Sekunden" loading="lazy" width="1000" height="500">
+              </a>
+              <figcaption><strong>Temperatur · 58,00 °C Maximum</strong><span>Grenzwert: höchstens 50,00 °C · FAIL bei 40,0–41,9 s</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="report-showcase">
+            <a class="report-preview" href="assets/test_report.pdf" target="_blank" rel="noopener noreferrer" aria-label="Vollständigen PDF-Testbericht öffnen">
+              <img src="assets/test_report_preview.png" alt="Erste Seite des originalen PDF-Testberichts mit drei fehlgeschlagenen Testfällen, Test-ID und Messwertübersicht" loading="lazy" width="849" height="1200">
+            </a>
+            <div class="report-copy">
+              <p class="section-kicker">AUTOMATISCH ERSTELLTE REPORTS</p>
+              <h3>Dokumentierte Testergebnisse</h3>
+              <p>Der mit dem Framework erzeugte Bericht dokumentiert die drei Testfälle, ihre Anforderungen, Grenzwertverletzungen und das Gesamtergebnis <strong>FAIL</strong> des simulierten Testlaufs TR-001.</p>
+              <div class="report-stats" aria-label="Ergebnisse des Beispiel-Testlaufs"><div><strong>3</strong><span>Testfälle</span></div><div><strong>0</strong><span>PASS</span></div><div><strong>3</strong><span>FAIL</span></div></div>
+              <div class="report-actions">
+                <a class="button button-primary" href="assets/test_report.pdf" target="_blank" rel="noopener noreferrer">PDF-Bericht ansehen <span aria-hidden="true">↗</span></a>
+                <a class="button button-secondary" href="assets/test_report.xlsx" download>Excel-Bericht herunterladen <span aria-hidden="true">↓</span></a>
+              </div>
+              <p class="report-disclaimer">Originalberichte aus dem vorhandenen abgeschlossenen Referenzprojekt. Die Quelldateien wurden nicht verändert.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="ausblick">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-kicker">02 / ROADMAP</p><h2>Geplante Projekte</h2></div></div>
+        <p class="section-intro">Die folgenden Themen sind geplant und werden erst nach ihrer tatsächlichen Umsetzung als abgeschlossene Arbeiten vorgestellt.</p>
+        <div class="roadmap-grid">
+          <article class="roadmap-card"><span class="roadmap-index">02</span><span class="pill pill-planned">Geplant</span><h3>Requirements Engineering &amp; V&amp;V</h3><p>Requirements, abgeleitete Testfälle, Traceability Matrix und systematische Verifikationsnachweise.</p></article>
+          <article class="roadmap-card"><span class="roadmap-index">03</span><span class="pill pill-planned">Geplant</span><h3>Produktions- &amp; Qualitätsdatenanalyse</h3><p>Simulierte Produktionsdaten, Kennzahlen, Fehlerursachenanalysen und Reporting.</p></article>
+          <article class="roadmap-card"><span class="roadmap-index">04</span><span class="pill pill-planned">Geplant</span><h3>Fault Detection</h3><p>Automatische Erkennung und Klassifizierung von Auffälligkeiten in simulierten Sensordaten.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="technologien">
+      <div class="container tech-layout">
+        <div><p class="section-kicker">03 / TECH STACK</p><h2>Im Referenzprojekt verwendete Technologien</h2><p class="section-intro">Die folgende Auswahl stammt aus dem abgeschlossenen Automated Test Validation Framework.</p></div>
+        <div class="tech-cloud"><span>Python</span><span>pandas</span><span>NumPy</span><span>matplotlib</span><span>openpyxl</span><span>ReportLab</span><span>pytest</span><span>Git</span><span>GitHub</span><span>GitHub Actions</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>Technisches Portfolio · Schrittweise erweiterbar</span><span>Letzte inhaltliche Grundlage: Referenzprojekt</span></div></footer>
+</body>
+</html>
